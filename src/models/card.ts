@@ -22,6 +22,7 @@ const cardSchema = new Schema<Card>({
   owner: {
     type: Schema.Types.ObjectId,
     required: true,
+    ref: 'user',
   },
   likes: {
     type: [Schema.Types.ObjectId],
